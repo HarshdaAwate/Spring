@@ -1,0 +1,32 @@
+1)	aceept request parametres
+
+2)	invoke a CustomerBean which has a business logic  (validate userid and pwd)
+	
+3)	valid | invalid user
+	
+		redirect ("orders.jsp")	
+		reirect ("login.jsp")
+	
+	
+	OrderServelt
+	
+	request - response  (redirection)
+	
+1) accept all order arguments (qty, whicn product, address)
+
+2) ivoke a business logic (orderbean) which we will pass above values and create a new order
+
+3)  neworderno (1000)				-> display ordersummary page
+or 0  "order nort place"			-> order.jsp
+
+
+
+	create a single Servlet (DispatcherServlet) 
+	@WebServlet ("/")
+	
+	
+	http://localhost:8055/projectName/
+	
+	
+	
+	

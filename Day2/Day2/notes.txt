@@ -1,0 +1,49 @@
+Constructor	-> Constructor arguments
+Properties  -> Setter method
+
+
+EMployee emp = new Employee("Ram", 22);
+
+
+contsructor arguements
+//SC is writing java code for us
+//SC is passing primitive type values for creating beans.
+
+//Java developer is not writing code
+
+
+
+//Property
+Employee emp = new Employee();
+emp.setName("Ram");
+emp.setAge(22);
+
+
+EMployee emp7 = new Employee("Ramesh", 28);
+emp7.setDesignation("VP");
+em7.setSalary(80000);
+
+for Spring Bean singleton scope 
+for every bean id a new objct would be created by SC and it would happen by default during SC loading or initilization phase
+when you ask for same bean id again and gain SC will always return same object
+
+<!-- Employee emp1 = new Employee(); -->
+<bean id="emp1" class="com.met.model.Employee" scope="singleton"></bean>
+ 	
+ 	<!-- Employee emp2 = new Employee(); -->
+ 	<bean id="emp2" class="com.met.model.Employee"></bean>
+
+Home work
+
+	id			A1 A2 A3 A4
+	city
+	country
+	
+
+
+
+
+
+
+
+

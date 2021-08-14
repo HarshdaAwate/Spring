@@ -1,0 +1,44 @@
+
+
+int id = Integer.parseInt(request.getParameter("id"));
+String name = request.getParameter("name");
+String designation = request.getParameter("designation");
+String emailId = request.getParameter("designation");
+
+50 fielsds
+
+
+Employee employee = new Employee();
+employee.setId(id);
+employee.setName(name);
+employee.setDesignation(designation);
+employee.setEmailId(emailId);
+
+
+Handshake between java code and jsp code
+	
+	Employee empl = new Employee();
+	
+	modelAndView("employee", empl);
+	
+	
+	jsp code
+	
+form spring created has create a taglib
+
+	<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
+	
+<sf:form modelAttribute="employee">
+	
+</sf:form>
+
+
+
+
+
+EMployeeBean empBean = new EmployeeBean();
+empBean.save(employee);
+
+
+
+

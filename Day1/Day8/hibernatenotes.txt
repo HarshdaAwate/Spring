@@ -1,0 +1,88 @@
+10 = select * from counters where CTR_NAME='orders';   CTR_NAME->primarykey
+
+session.get
+
+
+++value+1000
+11+1000 = 1011
+
+
+tx
+
+insert into orders ; 1011
+
+update counter value = 11;
+
+
+
+12 
+
+
+
+select ord_date, pno, qty, amt from invoices where cust_id=?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	CustomerServlet 
+	
+	doPost(request, response){
+	
+		String name = request.getParameter("name")
+		String email = request.getParameter("email")
+		String designatio = request.getParameter("designation")
+
+
+		Customer c = new Customer();
+		c.setName(name);
+		c.setEmail(email);
+		c.setDesignation(designation);
+
+
+
+		CustomerBean bean= new CB();
+		String flag = bean.saveCutsomer(c);
+		
+		if(falg.equals("suvvess")){
+			response.sendRedirect("welcome.jsp");
+		}else{
+			response.sendRedirect("customer.jsp?param=false");
+		}
+
+	}
+	
+	CustomerBean
+	
+		public String  saveCutsomer(Customer c){
+		
+			try(Session session = hU.getSF.openSession()){
+				
+				open tx
+				
+				session.save(c);
+				
+				tx.commit();
+				
+				return success;
+				
+			}catch(Exception e){
+			
+				if(tx != null) tx.rollback();
+			}
+		
+		
+			return fail;
+		}
+	
+	
+

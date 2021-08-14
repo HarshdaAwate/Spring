@@ -1,0 +1,21 @@
+impleneting interface Trainer
+JavaTrainer			-> 1 & 2
+DotNetTrainer		-> dotNettRainer	
+
+JavaDotNetTrainer	-> javaDotNetTrainer
+
+4
+
+3
+
+for proxy
+
+JT
+DT
+JDT
+
+
+
+
+
+

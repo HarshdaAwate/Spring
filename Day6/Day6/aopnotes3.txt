@@ -1,0 +1,29 @@
+ com.sun.proxy.$Proxy21  -> JRE 
+ 
+ if you class in which train method is present is implemneting interface 
+ 
+ 
+ JavaTrainer 
+ DotNetTrainer 
+ 
+ 
+ 
+ class Proxy21 implements Trainer {
+ 
+ 
+	Trianer trainer;
+ 
+	
+	public void train(){
+		
+		System.out.println("Participants are joining google meet");
+		System.out.println("Participants are switching off mobile phones");
+		
+		trainer.train();			//invoke business logic
+		
+		System.out.println("Training is completed");
+	
+	}
+	
+	
+ }

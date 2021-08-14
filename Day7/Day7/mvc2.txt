@@ -1,0 +1,117 @@
+<servlet>
+  	<servlet-name>mvcServlet</servlet-name>  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+
+<servlet-mapping>
+  	<servlet-name>mvcServlet</servlet-name>
+  	<url-pattern>/mvc/*</url-pattern>
+  </servlet-mapping>
+  
+
+/WEB-INF/mvcServlet-servlet.xml
+/WEB-INF/{servlet-name}-servlet.xml
+
+/WEB-INF/pages/hello.jsp
+  
+  
+http://localhost:8055/SpringWebMVC/mvc/hello			-> @RequestMapping("/hello")
+  
+http://localhost:8055/SpringWebMVC/mvc/employee	-> @RequestMapping("/employee")
+  
+http://localhost:8055/SpringWebMVC/mvc/order			-> @RequestMapping("/order")
+
+
+@RequestMapping("/hello")
+public class HelloController{
+
+	public ModelAndView welcome(){
+	
+		ModelAndView modelAndView = new ModelAndView();
+		//mode-> data which we need to show on web page
+		//view -> english name of web page			(not sending welcome.jps. employee.jsp)
+		
+		
+		modelAndView.setViewname("hello");
+		
+		return modelAndView;
+		
+		
+	}
+
+
+}
+
+/WEB-INF/pages/hello.jsp
+
+
+/WEB-INF/newpages/hello.jsp
+
+ /WEB-INF/pages/hello.jsp
+
+
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">	
+		<property name="prefix">
+			<value>/WEB-INF/pages/</value>		
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	
+	/WEB-INF/pages/emp.jsp
+
+@RequestMapping("/employee")
+public class EMployeeController{
+
+	
+
+}
+
+
+
+
+
+public void init(){
+	
+	try(AbstractApplicationCOntext context = new XMLWebApplicationCOntext("/WEB-INF/mvcServlet-servlet.xml")){
+	
+			
+	
+	}
+	
+	
+	
+	
+
+}
+
+http://localhost:8055/SpringWebMVC/mvc/hello/requestParam?name=Ramesh&age=25
+
+request.getParameter("name");
+request.getParameter("name");
+
+
+
+1) creating/dispalying form
+2) submitting that form.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

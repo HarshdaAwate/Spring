@@ -1,0 +1,17 @@
+Order.java
+
+public void placeOrder(){
+
+	cutting concerns (busingess logic )
+
+//create connection
+//create pstmt
+	
+	
+	pstmt.executeUpdate("insert into ordertbl new values (1001)");		//BUiness logic
+	
+
+//close db objects
+//handle exception	
+	
+}

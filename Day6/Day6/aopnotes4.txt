@@ -1,0 +1,14 @@
+//create connection			//Before tx							-> @Before
+//create pstmt
+	
+	
+	pstmt.executeUpdate("insert into ordertbl new values (1001)");		//BUiness logic
+	
+	//commit				//if transaction is success			@AfterReturning	
+	
+
+//close db objects
+//handle exception			//if Exception is thrown			@AFterThrowing
+
+//finally					//if failure or sucess 				@After
+								this block is called

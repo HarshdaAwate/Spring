@@ -1,0 +1,44 @@
+AOP -> Aspect Oriented Programming
+
+Maintainence problem
+
+Same code is duplicated accross multiple files.  (bolier plate code)
+cutting your businness logic 
+
+cross cutting concerns 
+
+public void deposit(){
+
+cutting concerns (busingess logic )
+
+//create connection
+//create pstmt
+
+pstmt.setUpdate("update account set balance=balance + 1000 whwre account_id=" + id)
+
+//close db objects
+//handle exception
+
+
+
+}
+
+Aspect: class which will help to modularize your cross cutting concerns.
+
+
+TrainingWorkshop
+	conductWorkshop() -> metSolution conductTraining()  -> train()
+	
+	
+conductWorkshop
+conductTraining
+train
+	JOINPOINT
+	
+train ()     -> PointCUt
+
+
+	
+	
+
+

@@ -1,0 +1,23 @@
+
+Spring COntainer / IOC COntainer
+
+it is an Interface called 
+
+		ApplicationContext
+		
+			1) ClassPath   XML  ApplicationCOntext
+			2) FileSystem   XML   ApplicationConext
+			3) WEB  XML   ApplicationCOntext.
+			
+			
+			C:\\data\springtest.xml
+			F:\\data\springtest.xml:
+			D:
+			
+			F:\CDAC-BANDRA-JUL-2020\CodingSamples\SpringTest\resources\springtest.xml
+			
+			
+			
+			
+			
+			

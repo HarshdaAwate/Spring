@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+ xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c" 
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+ http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd" >
+ 
+ 		<!-- JavaTrainer javaTrainer = new JavaTrainer();
+		javaTrainer.setName("Ram");
+		
+		List<String> subjects = new ArrayList<String>();
+		subjects.add("OOPS");
+		subjects.add("COLLECTIONS");
+		subjects.add("JDBC");
+		
+		javaTrainer.setSubjects(subjects); -->
+		
+		<!-- <bean id="javaTrainer1" class="com.met.model.JavaTrainer">
+			<property name="name" value="Ram"></property>
+			<property name="subjects">
+				<list>
+					<value>OOPS</value>
+					<value>COLLECTIONS</value>
+					<value>JDBC</value>
+				</list>
+			</property>
+		</bean> -->
+		
+		<bean id="javaTrainer1" class="com.met.model.JavaTrainer">
+			<property name="name" value="Sham"></property>
+			<property name="subjects">
+				<list>
+					<value>HIBERNATE</value>
+					<value>JSP</value>
+					<value>JDBC</value>
+				</list>
+			</property>
+		</bean>
+		
+ 		<!-- METSolutions metSolutions = new METSolutions(javaTrainer); -->
+ 		
+ 		<bean id="metSolutions" class="com.met.model.METSolutions">
+ 			<!-- <constructor-arg name="trainer" ref="javaTrainer1"></constructor-arg> -->
+ 		</bean>
+ 		
+ 		<!-- TrainingWorkshop workshop = new TrainingWorkshop();
+		workshop.setTrainingCompany(metSolutions); -->
+ 		
+ 		<bean id="workshop" class="com.met.model.TrainingWorkshop">
+ 			<property name="trainingCompany" ref="metSolutions"></property>
+ 		</bean>
+ 		
+ 
+ </beans>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
